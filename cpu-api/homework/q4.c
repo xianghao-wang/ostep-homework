@@ -18,6 +18,8 @@ int main(int argc, char **argv)
     char *myargs[2];
     myargs[0] = strdup("/bin/ls");
     myargs[1] = NULL; // Mark the end of array
+
+    // execlp(myargs[0], myargs[0], myargs[1]);
     execvp(myargs[0], myargs);
   }
   else
